@@ -1,0 +1,70 @@
+body{
+    font-family: Arial;
+}
+.warning{
+  background:#ffaaaa;
+  color:#880000;
+  padding-left:2px;
+  padding-right:2px;
+  padding-top:2px;
+  padding-bottom:2px;
+}
+div.warning{
+  border:1px solid #880000;
+}
+div.ok{
+  background:#aaffaa;
+  color:#008800;
+  border:1px solid #008800;
+}
+div, div.warning{
+  padding-left:5px;
+  padding-right:5px;
+  padding-top:3px;
+  padding-bottom:3px;
+  margin-top:2px;
+  margin-bottom:2px;
+}
+div.ok, div.warning{
+  width:96%;
+}
+span.warning{
+  margin-left:5px;
+}
+
+table{
+  border-left:1px solid #888888;
+  border-top:1px solid #888888;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+td{
+  border-right:1px solid #888888;
+  border-bottom:1px solid #888888;
+  padding-left:10px;
+  padding-right:10px;
+  padding-top:3px;
+  padding-bottom:3px;
+}
+.hint{
+  font-size:70%;
+}
+.person{
+  border:1px solid #888888;
+  background:#eeeeee;
+}
+.person div{
+  display:inline;
+  border-left:1px solid #888888;
+}
+.person div.name{
+  font-weight:bold;
+  border-left:0px;
+}
+.small{
+  font-size:70%;
+}
+p.epigraph{
+  width:100%;
+  text-align:right;
+}

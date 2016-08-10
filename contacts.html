@@ -1,0 +1,11 @@
+<p><a href="/" class="small">Вверх</a></p>
+
+<h1>Контакты ЛКШат 2016.Август</h1>
+
+{% for c in contacts %}
+  <div class="person">
+      {% for field in fields %}
+          <div>{{ c[field.id] |e }}</div>
+      {% endfor %}
+  </div>
+{% endfor %}
