@@ -5,7 +5,7 @@
 {% for c in contacts %}
   <div class="person">
       {% for field in fields %}
-          <div>{{ c[field.id] |e }}</div>
+          <div title="{{ field.name|e }}">{{ c[field.id] |e }}</div>
       {% endfor %}
   </div>
 {% endfor %}

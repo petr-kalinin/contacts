@@ -5,6 +5,8 @@ import pymongo
 import cgi
 from datetime import datetime
 
+import initial_data
+
 MONGO_PORT = 12016
 MONGO_DB = "contacts"
 
@@ -30,6 +32,8 @@ for i in range(len(FIELDNAMES)):
 
 def init_data(contacts):
     print(client.database_names())
+    if contacts.find({}).count() == 0:
+        initial_data.fill_initial_data(contacts)
     
 client = pymongo.MongoClient(port=MONGO_PORT)
 db = client[MONGO_DB]
